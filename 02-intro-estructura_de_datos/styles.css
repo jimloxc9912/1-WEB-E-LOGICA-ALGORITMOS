@@ -1,0 +1,111 @@
+:root {
+    --pastel-rosa: #ffd6e0;
+    --pastel-verde: #c1fba4;
+    --pastel-azul: #b8f3ff;
+    --pastel-lila: #e8d7ff;
+    --pastel-amarillo: #fff5c0;
+  }
+  
+  body {
+    font-family: 'Comic Neue', cursive;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  header {
+    background-color: var(--pastel-rosa);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    color: #ff6b9d;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  select, input {
+    padding: 8px 12px;
+    border: 2px solid var(--pastel-lila);
+    border-radius: 8px;
+    font-family: inherit;
+  }
+  
+  button {
+    background-color: var(--pastel-verde);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  .categorias-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .categoria {
+    background-color: var(--pastel-azul);
+    border-radius: 10px;
+    padding: 15px;
+  }
+  
+  .categoria h2 {
+    margin-top: 0;
+    color: #2a9d8f;
+    border-bottom: 2px dashed var(--pastel-lila);
+    padding-bottom: 5px;
+  }
+  
+  .productos-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .producto-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: white;
+    border-radius: 6px;
+  }
+  
+  .producto-item button {
+    background-color: var(--pastel-rosa);
+    padding: 3px 8px;
+  }
+  
+  footer {
+    background-color: var(--pastel-amarillo);
+    padding: 15px;
+    text-align: center;
+  }
+  
+  #limpiar {
+    background-color: #ff9aa2;
+    color: white;
+  }
